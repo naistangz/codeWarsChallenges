@@ -14,7 +14,7 @@
 Solutions to [codewars code katas](https://www.codewars.com/users/naistangz)
 
 Main Languages used:
--[x] Python
--[x] SQL
--[x] Javascript
+- [x] Python
+- [x] SQL
+- [x] Javascript
 
