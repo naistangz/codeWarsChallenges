@@ -2,7 +2,7 @@
 
 <p align="center">
    <a href="http://hits.dwyl.io/naistangz/codewars-handbook">
-      <img src="https://img.shields.io/badge/dynamic/xml?color=success&label=views&query=//*[name()=%27text%27][2]&url=http://hits.dwyl.io/ParanoidUser/codewars.svg"
+      <img src="https://img.shields.io/badge/dynamic/xml?color=success&label=views&query=//*[name()=%27text%27][2]&url=http://hits.dwyl.io/naistangz/codewars.svg"
            title="Views statistics +1 👀">
    </a>
    <a href="https://www.codewars.com">
@@ -11,10 +11,10 @@
    </a>
 <p>
 
-Solutions to [codewars code katas]
+Solutions to [codewars code katas](https://www.codewars.com/users/naistangz)
 
 Main Languages used:
--[x]Python
--[x]SQL
--[x]Javascript
+-[x] Python
+-[x] SQL
+-[x] Javascript
 
