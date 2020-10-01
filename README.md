@@ -1,4 +1,4 @@
-# Code War Challenges :space_invader:
+# Code War Challenges :space_invader: 🥋
 
 <p align="center">
    <a href="https://www.codewars.com">
@@ -12,7 +12,8 @@ Using an educational platform to train on programming challenges known as kata.
 Solutions to [codewars code katas](https://www.codewars.com/users/naistangz)
 
 Main Languages used:
-- [x] Python
+- [x] Python 
 - [x] SQL
 - [x] Javascript
 
+![My Codewarrior Profile Badge](https://www.codewars.com/users/naistangz/badges/large)
