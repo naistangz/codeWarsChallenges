@@ -26,14 +26,13 @@ def solve(n):
         # checking i is factor of N
         if n % i == 0:
             a = i
-            b = n//i
+            b = n // i
 
             # condition checking factor satisfies equation
-            if b - a != 0 and (b-a) % 2 == 0:
-                x = min(x, (b-a) // 2)
+            if b - a != 0 and (b - a) % 2 == 0:
+                x = min(x, (b - a) // 2)
 
-    return(x*x if x!=1e9 else -1)
-
+    return (x * x if x != 1e9 else -1)
 
 
 # second method
@@ -45,6 +44,5 @@ def solve(n):
 #         if ((n + (i+1)**2)**0.5)%1 == 0:
 #             return (i+1)**2
 
-print(solve(3)) # 1
-print(solve(7)) # 9 (7 + 9) = 16, a perfect square
-
+print(solve(3))  # 1
+print(solve(7))  # 9 (7 + 9) = 16, a perfect square
