@@ -7,6 +7,8 @@
    </a>
 <p>
 
+Using an educational platform to train on programming challenges known as kata.
+
 Solutions to [codewars code katas](https://www.codewars.com/users/naistangz)
 
 Main Languages used:
