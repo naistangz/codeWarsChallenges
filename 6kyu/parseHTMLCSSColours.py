@@ -21,4 +21,38 @@ parse_html_color('LimeGreen') # => {'r': 50,  'g': 205, 'b': 50 }
 """
 
 
+# def hex_to_rgb(value):
+#     value = value.lstrip('#')
+#     lv = len(value)
+#     hexed_value = tuple(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+#     return "Hex to RGB: " + str(hexed_value)
 
+def parse_html_color(value):
+    rgb = ['r', 'g', 'b']
+    value = value.lstrip('#')
+    lv = len(value)
+    hexed_value = list(int(value[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
+    hex_dictionary = dict(zip(rgb, hexed_value))
+    return hex_dictionary
+
+# def rgb_to_hex(rgb):
+#     return '#%02x%02x%02x' % rgb
+
+
+print(parse_html_color("#ffffff")    )          # ==> {'r': 255, 'g': 255, 'b': 255}
+print(parse_html_color("#ffffffffffff")   )     # ==> {'r': 65535, 'g': 65535, 'b': 65535}
+print(parse_html_color("#80FFA0"))              # ==> {'r': 128, 'g': 255, 'b': 160}
+# rgb_to_hex((255, 255, 255))        # ==> '#ffffff'
+# rgb_to_hex((65535, 65535, 65535))  # ==> '#ffffffffffff'
+
+
+
+def parse_html_color(color):
+    color = PRESET_COLORS.get(color.lower(), color)
+    # for range starting at 1, ending at 6, for every 2 letters
+    if len(color) == 7:
+        r, g, b = (int(color[i:i+2], 16) for i in range(1, 7, 2))
+    else:
+        r, g, b = (int(color[i+1]*2, 16) for i in range(3))
+
+    return dict(zip("rgb", (r, g, b)))
